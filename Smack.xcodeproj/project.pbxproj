@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		483EC2DE21467A3C0097F77D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483EC2DD21467A3C0097F77D /* AppDelegate.swift */; };
-		483EC2E021467A3C0097F77D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483EC2DF21467A3C0097F77D /* ViewController.swift */; };
 		483EC2E321467A3C0097F77D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483EC2E121467A3C0097F77D /* Main.storyboard */; };
 		483EC2E521467A3D0097F77D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483EC2E421467A3D0097F77D /* Assets.xcassets */; };
 		483EC2E821467A3D0097F77D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 483EC2E621467A3D0097F77D /* LaunchScreen.storyboard */; };
 		489F43F3214680B50027995A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 489F43F2214680B50027995A /* SWRevealViewController.m */; };
+		48C0EF4D21491C490018708D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C0EF4C21491C490018708D /* ChatViewController.swift */; };
+		48C0EF4F21491C7D0018708D /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C0EF4E21491C7D0018708D /* ChannelViewController.swift */; };
 		BA6630D7256AEB7E2936F58D /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53A49536D8D1322BD8460C90 /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		483EC2DA21467A3C0097F77D /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		483EC2DD21467A3C0097F77D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		483EC2DF21467A3C0097F77D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		483EC2E221467A3C0097F77D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		483EC2E421467A3D0097F77D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		483EC2E721467A3D0097F77D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -27,6 +27,8 @@
 		489F43F0214680B40027995A /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		489F43F1214680B50027995A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		489F43F2214680B50027995A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		48C0EF4C21491C490018708D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		48C0EF4E21491C7D0018708D /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 		53A49536D8D1322BD8460C90 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B6B31803FDCF6FE0229CF4A /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		F97B455C65C9399D8DC61E6A /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,10 +76,12 @@
 		483EC2DC21467A3C0097F77D /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				48C0EF4921491BA60018708D /* Controller */,
+				48C0EF4A21491BC70018708D /* View */,
+				48C0EF4B21491BCF0018708D /* Model */,
 				489F43EF214680800027995A /* Supporting Files */,
-				483EC2DD21467A3C0097F77D /* AppDelegate.swift */,
-				483EC2DF21467A3C0097F77D /* ViewController.swift */,
 				483EC2E121467A3C0097F77D /* Main.storyboard */,
+				483EC2DD21467A3C0097F77D /* AppDelegate.swift */,
 				483EC2E421467A3D0097F77D /* Assets.xcassets */,
 				483EC2E621467A3D0097F77D /* LaunchScreen.storyboard */,
 				483EC2E921467A3D0097F77D /* Info.plist */,
@@ -93,6 +97,29 @@
 				489F43F0214680B40027995A /* Smack-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48C0EF4921491BA60018708D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48C0EF4C21491C490018708D /* ChatViewController.swift */,
+				48C0EF4E21491C7D0018708D /* ChannelViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48C0EF4A21491BC70018708D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48C0EF4B21491BCF0018708D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6B8EF3CE79C673D167E04D07 /* Frameworks */ = {
@@ -222,8 +249,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				483EC2E021467A3C0097F77D /* ViewController.swift in Sources */,
 				483EC2DE21467A3C0097F77D /* AppDelegate.swift in Sources */,
+				48C0EF4D21491C490018708D /* ChatViewController.swift in Sources */,
+				48C0EF4F21491C7D0018708D /* ChannelViewController.swift in Sources */,
 				489F43F3214680B50027995A /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
